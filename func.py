@@ -27,7 +27,7 @@ def handler(ctx, data: io.BytesIO=None):
     signer = oci.auth.signers.get_resource_principals_signer()
     ai_client = oci.ai_speech.AIServiceSpeechClient(config={}, signer=signer)
     transcription_job_details = {
-        "compartment_id": "ocid1.bucket.oc1.iad.aaaaaaaanpgroblaq6a26vg6icla7uufdpoqioccajoys46pdznhf4zcpfnq",
+        "compartment_id": "ocid1.compartment.oc1..aaaaaaaak36vx3gz6teekwx5cwo3mazzg5vqkmsnppfqjursrsnxth7x3spa",
         "model_details": oci.ai_speech.models.TranscriptionModelDetails(
             model_type="WHISPER_MEDIUM",
             domain="GENERIC",
